@@ -1,0 +1,9 @@
+{
+  "name": "train-control",
+  "version": "0.1.0",
+  "title": "Train Control",
+  "author": "kwyntes",
+  "factorio_version": "1.1",
+  "dependencies": ["base >= 1.1", "flib >= 0.13.0"],
+  "description": "Let stations take control over your trains!"
+}
