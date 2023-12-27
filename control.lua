@@ -252,7 +252,10 @@ script.on_event(defines.events.on_player_setup_blueprint, function(e)
         end
     end
 
-    for index, entity in ipairs(bp.get_blueprint_entities()) do
+    local entities = bp.get_blueprint_entities()
+    if not entities then return end
+
+    for index, entity in ipairs(entities) do
         if entity.name ~= "train-stop" then goto continue end
 
         local real_entity = e.surface.find_entity(entity.name, entity.position)
